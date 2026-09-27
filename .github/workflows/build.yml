@@ -8,7 +8,7 @@ jobs:
       contents: write
       id-token: write
       attestations: write
-    uses: tresbientech/drupack/.github/workflows/build.yml@0.5.3
+    uses: tresbientech/drupack/.github/workflows/build.yml@0.5.4
     with:
       publish: true
     secrets:
