@@ -1,0 +1,15 @@
+on:
+  push:
+    tags: ['*']
+
+jobs:
+  build:
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+    uses: tresbientech/drupack/.github/workflows/build.yml@0.5.3
+    with:
+      publish: true
+    secrets:
+      COMPOSER_AUTH: ${{ secrets.COMPOSER_AUTH }}
